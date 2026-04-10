@@ -2,6 +2,7 @@
 .env
 .env.backup
 .env.production
+.env.local
 .phpactor.json
 .phpunit.result.cache
 /.fleet
@@ -17,9 +18,16 @@
 /public/storage
 /storage/*.key
 /storage/pail
+/storage/logs
 /vendor
 auth.json
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+database/database.sqlite
+database/database.sqlite-shm
+database/database.sqlite-wal
+.DS_Store
+.env.*.local
+Thumbs.db
