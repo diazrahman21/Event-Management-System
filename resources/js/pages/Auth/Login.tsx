@@ -3,10 +3,8 @@ import { FormEvent, FormHTMLAttributes } from 'react';
 
 export default function Login({
     status,
-    canResetPassword,
 }: {
     status?: string;
-    canResetPassword: boolean;
 } & FormHTMLAttributes<HTMLFormElement>) {
     const { data, setData, post, processing, errors, reset } = useForm({
         email: '',

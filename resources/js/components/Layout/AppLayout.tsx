@@ -1,5 +1,4 @@
 import { ReactNode, useState } from 'react';
-import { Link } from '@inertiajs/react';
 import Sidebar from './Sidebar';
 
 export default function AppLayout({ children, user }: { children: ReactNode; user: any }) {

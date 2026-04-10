@@ -6,17 +6,15 @@ import { useMemo } from 'react';
 export default function EventsIndex({
     auth,
     events,
-    filters,
 }: {
     auth: { user: any };
     events: any;
-    filters: any;
 }) {
     const statusCounts = useMemo(() => {
         const counts = { planning: 0, ongoing: 0, selesai: 0 };
         if (events?.data) {
             events.data.forEach((event: any) => {
-                if (counts.hasOwnProperty(event.status)) {
+                if (Object.hasOwn(counts, event.status)) {
                     counts[event.status as keyof typeof counts]++;
                 }
             });
