@@ -1,4 +1,4 @@
-import AppLayout from '../../Components/Layout/AppLayout';
+import AppLayout from '../../components/Layout/AppLayout';
 import { Link } from '@inertiajs/react';
 
 export default function ClientsIndex({ auth, clients }: { auth: { user: any }; clients: any }) {

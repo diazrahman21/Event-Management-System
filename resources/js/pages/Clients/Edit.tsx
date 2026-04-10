@@ -1,4 +1,4 @@
-import AppLayout from '../../Components/Layout/AppLayout';
+import AppLayout from '../../components/Layout/AppLayout';
 import { useForm } from '@inertiajs/react';
 
 export default function EditClient({ auth, client }: { auth: { user: any }; client: any }) {

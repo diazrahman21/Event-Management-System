@@ -1,6 +1,6 @@
-import AppLayout from '../../Components/Layout/AppLayout';
+import AppLayout from '../../components/Layout/AppLayout';
 import { Link } from '@inertiajs/react';
-import StatusBadge from '../../Components/StatusBadge';
+import StatusBadge from '../../components/status-badge';
 
 export default function ShowClient({ auth, client }: { auth: { user: any }; client: any }) {
     return (
