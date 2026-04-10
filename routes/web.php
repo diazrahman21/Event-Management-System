@@ -6,9 +6,10 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\TimelineController;
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 Route::get('/', function () {
-    return redirect(route('login'));
+    return Inertia::render('welcome');
 });
 
 Route::middleware(['auth'])->group(function () {
@@ -28,4 +29,5 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('timelines/{timeline}', [TimelineController::class, 'destroy'])->name('timelines.destroy');
 });
 
+require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
