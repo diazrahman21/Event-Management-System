@@ -1,6 +1,6 @@
-import AppLayout from '../../components/Layout/AppLayout';
+import AppLayout from '@/components/Layout/AppLayout';
 import { Link } from '@inertiajs/react';
-import StatusBadge from '../../components/status-badge';
+import StatusBadge from '@/components/StatusBadge';
 import { useMemo } from 'react';
 
 export default function EventsIndex({

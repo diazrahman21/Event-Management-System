@@ -1,4 +1,4 @@
-import AppLayout from '../../components/Layout/AppLayout';
+import AppLayout from '@/components/Layout/AppLayout';
 import { useForm } from '@inertiajs/react';
 import { FormEvent } from 'react';
 

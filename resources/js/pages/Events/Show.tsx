@@ -1,7 +1,7 @@
-import AppLayout from '../../components/Layout/AppLayout';
+import AppLayout from '@/components/Layout/AppLayout';
 import { Link } from '@inertiajs/react';
-import StatusBadge from '../../components/status-badge';
-import BudgetProgressBar from '../../components/budget-progress-bar';
+import StatusBadge from '@/components/StatusBadge';
+import BudgetProgressBar from '@/components/BudgetProgressBar';
 import { useState } from 'react';
 
 export default function ShowEvent({
